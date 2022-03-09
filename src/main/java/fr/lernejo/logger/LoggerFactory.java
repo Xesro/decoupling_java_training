@@ -2,9 +2,9 @@ package fr.lernejo.logger;
 
 public class LoggerFactory {
 
-    static Logger logger;
+    static Logger logger = new ConsoleLogger();
 
-    static Logger getLogger(String name) {
+    public static Logger getLogger(String name) {
         return logger;
     }
 
