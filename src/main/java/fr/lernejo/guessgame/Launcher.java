@@ -1,3 +1,5 @@
+package fr.lernejo.guessgame;
+
 import fr.lernejo.guessgame.ComputerPlayer;
 import fr.lernejo.guessgame.HumanPlayer;
 import fr.lernejo.guessgame.Simulation;
@@ -24,7 +26,7 @@ public class Launcher {
                 Long.MAX_VALUE
             );
 
-            age = Integer.parseInt(args[2]);
+            age = Integer.parseInt(args[1]);
         }
         else {
             System.out.println("usage : -interactive or -auto age");

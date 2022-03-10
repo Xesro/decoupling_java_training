@@ -21,7 +21,7 @@ public class HumanPlayer implements Player{
     @Override
     public void respond(boolean lowerOrGreater) {
         if (lowerOrGreater)
-            this.logger.log("higher");
+            this.logger.log("greater");
         else
             this.logger.log("lower");
     }

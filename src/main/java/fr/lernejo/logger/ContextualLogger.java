@@ -2,14 +2,13 @@ package fr.lernejo.logger;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Formatter;
 
 public class ContextualLogger implements Logger{
 
     private Logger delegateLogger;
     private String callerClass;
 
-    public ContextualLogger(Logger logger, String callerClass) {
+    public ContextualLogger(String callerClass, Logger logger) {
         delegateLogger = logger;
         this.callerClass = callerClass;
     }
